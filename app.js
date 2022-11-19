@@ -123,7 +123,12 @@ let score = 0;
 //define a load function that loads a question on html page
 const loadQuestion = () => {
     //load a question 
-
+    const QuestionList = quizDB[questioncount];
+    question.innerText = QuestionList.question;
+    option1.innerText = QuestionList.a;
+    option2.innerText = QuestionList.a;
+    option3.innerText = QuestionList.a;
+    option4.innerText = QuestionList.a;      // assign answer
 };
 
 
