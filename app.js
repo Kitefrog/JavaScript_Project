@@ -149,7 +149,6 @@ Submit.addEventListener('click', () => {
 
     //call the deselect function
 
-
     //if else statement for comperison and show results on the screen
 
 });
