@@ -143,7 +143,7 @@ const deselectall = () => {
 //apply an eventlistener on submit button(when user click on submit button the answer will be submit and new question will come on screen)
 
 
-
+// imran
 Submit.addEventListener('click', () => {
     //function to check the right answer by compering it
 
