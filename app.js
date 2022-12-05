@@ -143,13 +143,12 @@ answers.forEach((curAnsElem) => curAnsElem.checked = false);
 //apply an eventlistener on submit button(when user click on submit button the answer will be submit and new question will come on screen)
 
 
-
+// imran
 Submit.addEventListener('click', () => {
 //function to check the right answer by compering it
 
 //call the deselect function
 
 
-//if else statement for comperison and show results on the screen
 
 });
