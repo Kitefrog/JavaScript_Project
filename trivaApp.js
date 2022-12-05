@@ -4,7 +4,8 @@ const quizDB = [{
     b: "jaguar",
     c: "Lion",
     d: "Pronghorn",
-    ans: "ans1"
+    ans: "ans1",
+    img: "bg.jpg"
 },
 {
     question: "Q2: How many countries are in Africa?",
@@ -12,7 +13,8 @@ const quizDB = [{
     b: "54",
     c: "55",
     d: "56",
-    ans: "ans1"
+    ans: "ans1",
+    img: "bg.jpg"
 
 },
 {
@@ -21,7 +23,8 @@ const quizDB = [{
     b: "North America",
     c: "Africa",
     d: "America",
-    ans: "ans1"
+    ans: "ans1",
+    img: "bg.jpg"
 
 },
 
@@ -31,7 +34,9 @@ const quizDB = [{
     b: "54",
     c: "55",
     d: "56",
-    ans: "ans1"
+    ans: "ans1",
+    img: "bg.jpg"
+
 },
 ];
 
@@ -40,6 +45,8 @@ const option1 = document.querySelector('#option1');
 const option2 = document.querySelector('#option2');
 const option3 = document.querySelector('#option3');
 const option4 = document.querySelector('#option4');
+const imgChange = document.querySelector('#img')
+
 const Submit = document.querySelector('#submit');
 const Start = document.querySelector('#start');
 const answers = document.querySelectorAll('.answer');
@@ -55,6 +62,7 @@ option1.innerText = QuestionList.a;
 option2.innerText = QuestionList.b;
 option3.innerText = QuestionList.c;
 option4.innerText = QuestionList.d;
+imgChange.src = QuestionList.img;
 };
 
 const musicBtn = document.getElementById('musicBtn');
