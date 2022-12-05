@@ -8,7 +8,7 @@ const quizDB = [{
         c: "",
         d: "",
         //ans give the right answer of the question for example if the
-        ans: " ans1"
+        ans: "ans1"
     },
     {
         question: "Q2: Capital England",
@@ -16,7 +16,7 @@ const quizDB = [{
         b: "",
         c: "",
         d: "",
-        ans: " ans2"
+        ans: "ans2"
 
     },
     {
@@ -25,7 +25,7 @@ const quizDB = [{
         b: "",
         c: "",
         d: "",
-        ans: " ans2"
+        ans: "ans2"
 
     },
 
@@ -36,7 +36,7 @@ const quizDB = [{
         c: "",
         d: "",
      
-        ans: " ans1"
+        ans: "ans1"
     },
     {
         question: "Q5: Capital Chile",
@@ -44,7 +44,7 @@ const quizDB = [{
         b: "",
         c: "",
         d: "",
-        ans: " ans2"
+        ans: "ans2"
 
     },
     {
@@ -53,7 +53,7 @@ const quizDB = [{
         b: "",
         c: "",
         d: "",
-        ans: " ans2"
+        ans: "ans2"
 
     },
 
@@ -64,7 +64,7 @@ const quizDB = [{
         c: "",
         d: "",
         //ans give the right answer of the question for example if the
-        ans: " ans1"
+        ans: "ans1"
     },
     {
         question: "Q8: Turkey",
@@ -72,7 +72,7 @@ const quizDB = [{
         b: "",
         c: "",
         d: "",
-        ans: " ans2"
+        ans: "ans2"
 
     },
     {
@@ -81,7 +81,7 @@ const quizDB = [{
         b: "",
         c: "",
         d: "",
-        ans: " ans2"
+        ans: "ans2"
 
     },
     {
@@ -90,7 +90,7 @@ const quizDB = [{
         b: "",
         c: "",
         d: "",
-        ans: " ans2"
+        ans: "ans2"
 
     },
     
