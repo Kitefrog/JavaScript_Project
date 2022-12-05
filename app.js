@@ -2,98 +2,98 @@
 // I will add more questions here by following the template.
 
 const quizDB = [{
-        question: "Q1: Captial Canada",
-        a: "",
-        b: "",
-        c: "",
-        d: "",
-        //ans give the right answer of the question for example if the
-        ans: " ans1"
-    },
-    {
-        question: "Q2: Capital England",
-        a: "",
-        b: "",
-        c: "",
-        d: "",
-        ans: " ans2"
+    question: "Q1: Captial Canada",
+    a: "",
+    b: "",
+    c: "",
+    d: "",
+    //ans give the right answer of the question for example if the
+    ans: " ans1"
+},
+{
+    question: "Q2: Capital England",
+    a: "",
+    b: "",
+    c: "",
+    d: "",
+    ans: " ans2"
 
-    },
-    {
-        question: "Q3: Capital France",
-        a: "",
-        b: "",
-        c: "",
-        d: "",
-        ans: " ans2"
+},
+{
+    question: "Q3: Capital France",
+    a: "",
+    b: "",
+    c: "",
+    d: "",
+    ans: " ans2"
 
-    },
+},
 
-    {
-        question: "Q4: Captial US",
-        a: "",
-        b: "",
-        c: "",
-        d: "",
-     
-        ans: " ans1"
-    },
-    {
-        question: "Q5: Capital Chile",
-        a: "",
-        b: "",
-        c: "",
-        d: "",
-        ans: " ans2"
+{
+    question: "Q4: Captial US",
+    a: "",
+    b: "",
+    c: "",
+    d: "",
+ 
+    ans: " ans1"
+},
+{
+    question: "Q5: Capital Chile",
+    a: "",
+    b: "",
+    c: "",
+    d: "",
+    ans: " ans2"
 
-    },
-    {
-        question: "Q6: Capital Brazil",
-        a: "",
-        b: "",
-        c: "",
-        d: "",
-        ans: " ans2"
+},
+{
+    question: "Q6: Capital Brazil",
+    a: "",
+    b: "",
+    c: "",
+    d: "",
+    ans: " ans2"
 
-    },
+},
 
-    {
-        question: "Q7: Captial Spain",
-        a: "",
-        b: "",
-        c: "",
-        d: "",
-        //ans give the right answer of the question for example if the
-        ans: " ans1"
-    },
-    {
-        question: "Q8: Turkey",
-        a: "",
-        b: "",
-        c: "",
-        d: "",
-        ans: " ans2"
+{
+    question: "Q7: Captial Spain",
+    a: "",
+    b: "",
+    c: "",
+    d: "",
+    //ans give the right answer of the question for example if the
+    ans: " ans1"
+},
+{
+    question: "Q8: Turkey",
+    a: "",
+    b: "",
+    c: "",
+    d: "",
+    ans: " ans2"
 
-    },
-    {
-        question: "Q9: Capital China",
-        a: "",
-        b: "",
-        c: "",
-        d: "",
-        ans: " ans2"
+},
+{
+    question: "Q9: Capital China",
+    a: "",
+    b: "",
+    c: "",
+    d: "",
+    ans: " ans2"
 
-    },
-    {
-        question: "Q10: Capital Italy",
-        a: "",
-        b: "",
-        c: "",
-        d: "",
-        ans: " ans2"
+},
+{
+    question: "Q10: Capital Italy",
+    a: "",
+    b: "",
+    c: "",
+    d: "",
+    ans: " ans2"
 
-    },
-    
+},
+
 ];
 
 //get all references from html file 
@@ -122,7 +122,7 @@ let questioncount = 0;
 let score = 0;
 //define a load function that loads a question on html page
 const loadQuestion = () => {
-    //load a question 
+//load a question 
 
 };
 
@@ -137,7 +137,7 @@ loadQuestion();
 
 //define a function that deselect all options after answering the user.
 const deselectall = () => {
-    answers.forEach((curAnsElem) => curAnsElem.checked = false);
+answers.forEach((curAnsElem) => curAnsElem.checked = false);
 }
 
 //apply an eventlistener on submit button(when user click on submit button the answer will be submit and new question will come on screen)
@@ -145,10 +145,10 @@ const deselectall = () => {
 
 // imran
 Submit.addEventListener('click', () => {
-    //function to check the right answer by compering it
+//function to check the right answer by compering it
 
-    //call the deselect function
+//call the deselect function
 
-    //if else statement for comperison and show results on the screen
+
 
 });
