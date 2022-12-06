@@ -1,43 +1,110 @@
 const quizDB = [{
-    question: "Q1: Which is the fastest land animal?",
-    a: "Cheetah",
-    b: "jaguar",
-    c: "Lion",
-    d: "Pronghorn",
+    question: "Q1: What is the capital city of Japan?",
+    a: "Tokyo *",
+    b: "Washington D.C.",
+    c: "London",
+    d: "Moscow",
     ans: "ans1",
     img: "bg.jpg"
 },
 {
-    question: "Q2: How many countries are in Africa?",
-    a: "53",
-    b: "54",
-    c: "55",
-    d: "56",
-    ans: "ans1",
+    question: "Q2: What is the capital city of Brazil?",
+    a: "Sao Paulo",
+    b: "Rio de Janeiro",
+    c: "Brasilia *",
+    d: "Berlin",
+    ans: "ans3",
     img: "bg.jpg"
 
 },
 {
-    question: "Q3: In which continent is Toronto?",
-    a: "Asia",
-    b: "North America",
-    c: "Africa",
-    d: "America",
+    question: "Q3: What is the capital city of South Africa?",
+    a: "Johannesburg",
+    b: "Cape Town",
+    c: "Pretoria *",
+    d: "Madrid",
+    ans: "ans3",
+    img: "bg.jpg"
+
+},
+
+{
+    question: "Q4: What is the capital city of Australia?",
+    a: "Sydney",
+    b: "Melbourne",
+    c: "Brisbane",
+    d: "Canberra *",
+    ans: "ans4",
+    img: "bg.jpg"
+
+},
+
+{
+    question: "Q5: What is the capital city of Canada?",
+    a: "Toronto",
+    b: "Montreal",
+    c: "Vancouver",
+    d: "Ottawa *",
+    ans: "ans4",
+    img: "bg.jpg"
+
+},
+
+{
+    question: "Q6: What is the capital city of France?",
+    a: "Tokyo",
+    b: "Rome",
+    c: "New Delhi",
+    d: "Paris *",
+    ans: "ans4",
+    img: "bg.jpg"
+
+},
+
+{
+    question: "Q7: What is the capital city of Italy?",
+    a: "London",
+    b: "New York City",
+    c: "Rome *",
+    d: "Madrid",
+    ans: "ans3",
+    img: "bg.jpg"
+
+},
+
+{
+    question: "Q8: What is the capital city of Mexico?",
+    a: "Paris",
+    b: "Berlin",
+    c: "Mexico City *",
+    d: "Moscow",
     ans: "ans1",
     img: "bg.jpg"
 
 },
 
 {
-    question: "Q4: How many countries are in Africa?",
-    a: "53",
-    b: "54",
-    c: "55",
-    d: "56",
+    question: "Q9: What is the capital city of China?",
+    a: "London",
+    b: "Madrid",
+    c: "Beijing *",
+    d: "Rome",
+    ans: "ans3",
+    img: "bg.jpg"
+
+},
+
+{
+    question: "Q10: What is the capital city of Spain?",
+    a: "Madrid *",
+    b: "New York City",
+    c: "Paris",
+    d: "Berlin",
     ans: "ans1",
     img: "bg.jpg"
 
 },
+
 ];
 
 const question = document.querySelector('.question');
