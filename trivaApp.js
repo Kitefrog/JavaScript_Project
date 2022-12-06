@@ -5,7 +5,7 @@ const quizDB = [{
     c: "London",
     d: "Moscow",
     ans: "ans1",
-    img: "bg.jpg"
+    img: "tokyo.jpg"
 },
 {
     question: "Q2: What is the capital city of Brazil?",
@@ -14,7 +14,7 @@ const quizDB = [{
     c: "Brasilia *",
     d: "Berlin",
     ans: "ans3",
-    img: "bg.jpg"
+    img: "Brasilia.jpg"
 
 },
 {
@@ -24,7 +24,7 @@ const quizDB = [{
     c: "Pretoria *",
     d: "Madrid",
     ans: "ans3",
-    img: "bg.jpg"
+    img: "Pretoria.jpg"
 
 },
 
@@ -35,7 +35,7 @@ const quizDB = [{
     c: "Brisbane",
     d: "Canberra *",
     ans: "ans4",
-    img: "bg.jpg"
+    img: "Canberra.jpg"
 
 },
 
@@ -46,7 +46,7 @@ const quizDB = [{
     c: "Vancouver",
     d: "Ottawa *",
     ans: "ans4",
-    img: "bg.jpg"
+    img: "Ottawa.jpg"
 
 },
 
@@ -57,7 +57,7 @@ const quizDB = [{
     c: "New Delhi",
     d: "Paris *",
     ans: "ans4",
-    img: "bg.jpg"
+    img: "Paris.jpg"
 
 },
 
@@ -68,7 +68,7 @@ const quizDB = [{
     c: "Rome *",
     d: "Madrid",
     ans: "ans3",
-    img: "bg.jpg"
+    img: "Rome.jpg"
 
 },
 
@@ -79,7 +79,7 @@ const quizDB = [{
     c: "Mexico City *",
     d: "Moscow",
     ans: "ans1",
-    img: "bg.jpg"
+    img: "MexicoCity.jpg"
 
 },
 
@@ -90,7 +90,7 @@ const quizDB = [{
     c: "Beijing *",
     d: "Rome",
     ans: "ans3",
-    img: "bg.jpg"
+    img: "Beijing.jpg"
 
 },
 
@@ -101,7 +101,7 @@ const quizDB = [{
     c: "Paris",
     d: "Berlin",
     ans: "ans1",
-    img: "bg.jpg"
+    img: "Madrid.jpg"
 
 },
 
@@ -134,12 +134,10 @@ imgChange.src = QuestionList.img;
 
 const musicBtn = document.getElementById('musicBtn');
 const music = document.getElementById('music');
-// music.play();
 
 musicBtn.addEventListener('click', () => {
     if (musicBtn.textContent == "STOP") {
         music.pause();
-        music.currentTime = 0;
         musicBtn.textContent = "PLAY";
     } else {
         musicBtn.textContent = "STOP";
@@ -169,14 +167,17 @@ function startWords() {
 }
 
 var timerInterval;
-var timeLeft = 15;
+var timeLeft = 10;
 function startGame() {
     startWords();
+    music.play();
+    musicBtn.textContent = "STOP";
     document.getElementById("start").style.display = "none";
     setTimeout(() => {
         timerInterval = setInterval(updateTimer, 1000);
     }, 5000);
 };
+
 
 function updateTimer() {
   timeLeft--;
