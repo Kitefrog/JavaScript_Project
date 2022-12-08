@@ -134,6 +134,9 @@ imgChange.src = QuestionList.img;
 
 const musicBtn = document.getElementById('musicBtn');
 const music = document.getElementById('music');
+const correctAns = document.getElementById('correctAns');
+const incorrectAns = document.getElementById('incorrectAns');
+const gameOver = document.getElementById('gameOver');
 
 musicBtn.addEventListener('click', () => {
     if (musicBtn.textContent == "STOP") {
@@ -162,16 +165,16 @@ function startWords() {
     }, 4000);
     setTimeout(() => {
         loadQuestion();
+        music.play();
+        musicBtn.textContent = "STOP";
         document.getElementById("submit").disabled = false;
     }, 5000);
 }
 
 var timerInterval;
-var timeLeft = 10;
+var timeLeft = 15;
 function startGame() {
     startWords();
-    music.play();
-    musicBtn.textContent = "STOP";
     document.getElementById("start").style.display = "none";
     setTimeout(() => {
         timerInterval = setInterval(updateTimer, 1000);
@@ -192,6 +195,10 @@ function updateTimer() {
     `;
     showscore.classList.remove('d-none');
     clearInterval(timerInterval);
+    music.pause();
+    gameOver.play();
+    musicBtn.textContent = "PLAY";
+    
   }
 };
 
@@ -213,14 +220,26 @@ Start.addEventListener('click', () => {
     startGame();
 });
 
+const pauseCorrect = () => {
+    if (correctAns.currentTime = 0) {
+        correctAns.pause(); 
+    }
+} 
+
 Submit.addEventListener('click', () => {
     const checkedanswer = getCheckAnswer();
 
     if (checkedanswer == quizDB[questioncount].ans) {
         score++;
+        correctAns.play();
+        
+    }else if (checkedanswer != quizDB[questioncount].ans) {
+        incorrectAns.play();
     }
     questioncount++;
     deselectall();
+    pauseCorrect();
+    // setTimeout(pauseCorrect, 10)
 
     if (questioncount < quizDB.length) {
         loadQuestion();
