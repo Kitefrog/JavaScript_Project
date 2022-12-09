@@ -1,7 +1,6 @@
-//Quiz App
 const quizDB = [{
     question: "Q1: What is the capital city of Japan?",
-    a: "Tokyo",
+    a: "Tokyo *",
     b: "Washington D.C.",
     c: "London",
     d: "Moscow",
@@ -12,7 +11,7 @@ const quizDB = [{
     question: "Q2: What is the capital city of Brazil?",
     a: "Sao Paulo",
     b: "Rio de Janeiro",
-    c: "Brasilia",
+    c: "Brasilia *",
     d: "Berlin",
     ans: "ans3",
     img: "Brasilia.jpg"
@@ -22,7 +21,7 @@ const quizDB = [{
     question: "Q3: What is the capital city of South Africa?",
     a: "Johannesburg",
     b: "Cape Town",
-    c: "Pretoria",
+    c: "Pretoria *",
     d: "Madrid",
     ans: "ans3",
     img: "Pretoria.jpg"
@@ -34,7 +33,7 @@ const quizDB = [{
     a: "Sydney",
     b: "Melbourne",
     c: "Brisbane",
-    d: "Canberra",
+    d: "Canberra *",
     ans: "ans4",
     img: "Canberra.jpg"
 
@@ -45,7 +44,7 @@ const quizDB = [{
     a: "Toronto",
     b: "Montreal",
     c: "Vancouver",
-    d: "Ottawa",
+    d: "Ottawa *",
     ans: "ans4",
     img: "Ottawa.jpg"
 
@@ -56,7 +55,7 @@ const quizDB = [{
     a: "Tokyo",
     b: "Rome",
     c: "New Delhi",
-    d: "Paris",
+    d: "Paris *",
     ans: "ans4",
     img: "Paris.jpg"
 
@@ -66,7 +65,7 @@ const quizDB = [{
     question: "Q7: What is the capital city of Italy?",
     a: "London",
     b: "New York City",
-    c: "Rome",
+    c: "Rome *",
     d: "Madrid",
     ans: "ans3",
     img: "Rome.jpg"
@@ -77,9 +76,9 @@ const quizDB = [{
     question: "Q8: What is the capital city of Mexico?",
     a: "Paris",
     b: "Berlin",
-    c: "Mexico City",
+    c: "Mexico City *",
     d: "Moscow",
-    ans: "ans1",
+    ans: "ans3",
     img: "MexicoCity.jpg"
 
 },
@@ -88,7 +87,7 @@ const quizDB = [{
     question: "Q9: What is the capital city of China?",
     a: "London",
     b: "Madrid",
-    c: "Beijing",
+    c: "Beijing *",
     d: "Rome",
     ans: "ans3",
     img: "Beijing.jpg"
@@ -97,7 +96,7 @@ const quizDB = [{
 
 {
     question: "Q10: What is the capital city of Spain?",
-    a: "Madrid",
+    a: "Madrid *",
     b: "New York City",
     c: "Paris",
     d: "Berlin",
@@ -173,7 +172,7 @@ function startWords() {
 }
 
 var timerInterval;
-var timeLeft = 15;
+var timeLeft = 30;
 function startGame() {
     startWords();
     document.getElementById("start").style.display = "none";
