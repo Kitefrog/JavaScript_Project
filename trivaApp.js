@@ -78,7 +78,7 @@ const quizDB = [{
     b: "Berlin",
     c: "Mexico City *",
     d: "Moscow",
-    ans: "ans1",
+    ans: "ans3",
     img: "MexicoCity.jpg"
 
 },
@@ -172,7 +172,7 @@ function startWords() {
 }
 
 var timerInterval;
-var timeLeft = 15;
+var timeLeft = 30;
 function startGame() {
     startWords();
     document.getElementById("start").style.display = "none";
